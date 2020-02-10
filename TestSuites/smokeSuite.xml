@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automated Smoke Suite">
+	<listeners>
+		<listener class-name="utilities.listeners.TestListener" />
+		<listener class-name="utilities.listeners.AnotationTransformer" />
+	</listeners>
+	<test name="Smoke Test Run">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="login.LoginTest" />
+		</classes>
+	</test>
+</suite>
